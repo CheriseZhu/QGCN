@@ -9,9 +9,9 @@ To install requirements:
 ```setup
 pip install -r requirements.txt
 ```
-## To do
+## Training, evaluation and results
 
-
+To be done...
 
 ## Citation
 
