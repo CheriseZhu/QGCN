@@ -1,0 +1,90 @@
+INFO:root:Using: cuda:0
+INFO:root:Using seed 1234.
+INFO:root:LPModel(
+  (encoder): HGCN(
+    (layers): Sequential(
+      (0): HyperbolicGraphConvolution(
+        (linear): HypLinear(in_features=1434, out_features=16, c=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>))
+        (agg): HypAgg(
+          c=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>)
+          (att): DenseAtt(
+            (linear): Linear(in_features=32, out_features=1, bias=True)
+          )
+        )
+        (hyp_act): HypAct(c_in=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>), c_out=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>))
+      )
+      (1): HyperbolicGraphConvolution(
+        (linear): HypLinear(in_features=16, out_features=16, c=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>))
+        (agg): HypAgg(
+          c=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>)
+          (att): DenseAtt(
+            (linear): Linear(in_features=32, out_features=1, bias=True)
+          )
+        )
+        (hyp_act): HypAct(c_in=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>), c_out=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>))
+      )
+    )
+  )
+  (dc): FermiDiracDecoder()
+)
+INFO:root:Total number of parameters: 23298
+/workspace/anaconda3/envs/geo/lib/python3.7/site-packages/torch/nn/functional.py:1709: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+/workspace/anaconda3/envs/geo/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:370: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  "please use `get_last_lr()`.", UserWarning)
+INFO:root:Epoch: 0005 lr: 0.01 train_loss: 2.2537 train_roc: 0.9596 train_ap: 0.9569 time: 0.7661s
+INFO:root:Epoch: 0005 val_loss: 2.2538 val_roc: 0.8134 val_ap: 0.8204
+INFO:root:Epoch: 0010 lr: 0.01 train_loss: 2.2536 train_roc: 0.9686 train_ap: 0.9675 time: 0.7474s
+INFO:root:Epoch: 0010 val_loss: 2.2537 val_roc: 0.8404 val_ap: 0.8413
+INFO:root:Epoch: 0015 lr: 0.01 train_loss: 2.2531 train_roc: 0.9613 train_ap: 0.9615 time: 0.8095s
+INFO:root:Epoch: 0015 val_loss: 2.2533 val_roc: 0.8415 val_ap: 0.8441
+INFO:root:Epoch: 0020 lr: 0.01 train_loss: 2.2507 train_roc: 0.9614 train_ap: 0.9604 time: 0.7484s
+INFO:root:Epoch: 0020 val_loss: 2.2515 val_roc: 0.8364 val_ap: 0.8348
+INFO:root:Epoch: 0025 lr: 0.01 train_loss: 2.2483 train_roc: 0.9534 train_ap: 0.9498 time: 0.7588s
+INFO:root:Epoch: 0025 val_loss: 2.2428 val_roc: 0.8252 val_ap: 0.8108
+INFO:root:Epoch: 0030 lr: 0.01 train_loss: 2.1913 train_roc: 0.9271 train_ap: 0.9215 time: 0.7155s
+INFO:root:Epoch: 0030 val_loss: 2.2030 val_roc: 0.8102 val_ap: 0.7894
+INFO:root:Epoch: 0035 lr: 0.01 train_loss: 2.0908 train_roc: 0.9248 train_ap: 0.9178 time: 0.7180s
+INFO:root:Epoch: 0035 val_loss: 2.0414 val_roc: 0.7890 val_ap: 0.7539
+INFO:root:Epoch: 0040 lr: 0.01 train_loss: 1.3361 train_roc: 0.8260 train_ap: 0.8085 time: 0.7828s
+INFO:root:Epoch: 0040 val_loss: 1.6025 val_roc: 0.7156 val_ap: 0.7341
+INFO:root:Epoch: 0045 lr: 0.01 train_loss: 1.4583 train_roc: 0.7771 train_ap: 0.7601 time: 0.7925s
+INFO:root:Epoch: 0045 val_loss: 1.6509 val_roc: 0.6715 val_ap: 0.6326
+INFO:root:Epoch: 0050 lr: 0.01 train_loss: 1.6178 train_roc: 0.7235 train_ap: 0.7115 time: 0.8208s
+INFO:root:Epoch: 0050 val_loss: 1.7380 val_roc: 0.6622 val_ap: 0.6176
+INFO:root:Epoch: 0055 lr: 0.01 train_loss: 1.9985 train_roc: 0.7124 train_ap: 0.7121 time: 0.8238s
+INFO:root:Epoch: 0055 val_loss: 1.6283 val_roc: 0.6775 val_ap: 0.6333
+INFO:root:Epoch: 0060 lr: 0.01 train_loss: 1.2266 train_roc: 0.8147 train_ap: 0.7726 time: 0.8632s
+INFO:root:Epoch: 0060 val_loss: 1.5808 val_roc: 0.7055 val_ap: 0.6705
+INFO:root:Epoch: 0065 lr: 0.01 train_loss: 1.3928 train_roc: 0.7686 train_ap: 0.7407 time: 0.8557s
+INFO:root:Epoch: 0065 val_loss: 1.5171 val_roc: 0.7122 val_ap: 0.6993
+INFO:root:Epoch: 0070 lr: 0.01 train_loss: 1.5259 train_roc: 0.8105 train_ap: 0.7757 time: 0.8238s
+INFO:root:Epoch: 0070 val_loss: 1.4663 val_roc: 0.7274 val_ap: 0.7000
+INFO:root:Epoch: 0075 lr: 0.01 train_loss: 1.4321 train_roc: 0.8426 train_ap: 0.8043 time: 0.8517s
+INFO:root:Epoch: 0075 val_loss: 1.4812 val_roc: 0.7307 val_ap: 0.7097
+Traceback (most recent call last):
+  File "train.py", line 155, in <module>
+    train(args)
+  File "train.py", line 99, in train
+    embeddings = model.encode(data['features'], data['adj_train_norm'])
+  File "/workspace/xiongbo/hgcn/hgcn/models/base_models.py", line 91, in encode
+    h = self.encoder.encode(x, adj)
+  File "/workspace/xiongbo/hgcn/hgcn/models/encoders.py", line 137, in encode
+    return super(HGCN, self).encode(x_hyp, adj)
+  File "/workspace/xiongbo/hgcn/hgcn/models/encoders.py", line 27, in encode
+    output, _ = self.layers.forward(input)
+  File "/workspace/anaconda3/envs/geo/lib/python3.7/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/workspace/anaconda3/envs/geo/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/workspace/xiongbo/hgcn/hgcn/layers/hyp_layers.py", line 78, in forward
+    h = self.hyp_act.forward(h)
+  File "/workspace/xiongbo/hgcn/hgcn/layers/hyp_layers.py", line 203, in forward
+    output = self.manifold.expmap0(xt, self.c_out)
+  File "/workspace/xiongbo/hgcn/hgcn/manifolds/pseudohyperboloid_sh.py", line 213, in expmap0
+    x_sphere = self.expmap_0(tangent_s, beta, time_dim=time_dim)
+  File "/workspace/xiongbo/hgcn/hgcn/manifolds/pseudohyperboloid_sh.py", line 173, in expmap_0
+    return self.expmap(origin, v, beta, time_dim=time_dim)
+  File "/workspace/xiongbo/hgcn/hgcn/manifolds/pseudohyperboloid_sh.py", line 163, in expmap
+    assert not torch.isnan(v[null_geodesic,:]).any()
+AssertionError

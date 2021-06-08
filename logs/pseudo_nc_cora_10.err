@@ -1,0 +1,55 @@
+INFO:root:Using: cuda:0
+INFO:root:Using seed 1234.
+INFO:root:Num classes: 7
+INFO:root:NCModel(
+  (encoder): HGCN(
+    (layers): Sequential(
+      (0): HyperbolicGraphConvolution(
+        (linear): HypLinear(in_features=1434, out_features=16, c=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>))
+        (agg): HypAgg(c=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>))
+        (hyp_act): HypAct(c_in=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>), c_out=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>))
+      )
+    )
+  )
+  (decoder): LinearDecoder(
+    in_features=16, out_features=7, bias=1, c=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>)
+    (cls): Linear(
+      (linear): Linear(in_features=16, out_features=7, bias=True)
+    )
+  )
+)
+INFO:root:Total number of parameters: 23079
+/workspace/anaconda3/envs/geo/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:370: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  "please use `get_last_lr()`.", UserWarning)
+INFO:root:Epoch: 0005 lr: 0.01 train_loss: 1.9516 train_acc: 0.1857 train_f1: 0.1857 time: 1.1210s
+INFO:root:Epoch: 0005 val_loss: 1.9363 val_acc: 0.1300 val_f1: 0.1300
+INFO:root:Epoch: 0010 lr: 0.01 train_loss: 1.9177 train_acc: 0.1786 train_f1: 0.1786 time: 1.0005s
+INFO:root:Epoch: 0010 val_loss: 1.9368 val_acc: 0.1580 val_f1: 0.1580
+Traceback (most recent call last):
+  File "train.py", line 155, in <module>
+    train(args)
+  File "train.py", line 117, in train
+    embeddings = model.encode(data['features'], data['adj_train_norm'])
+  File "/workspace/xiongbo/hgcn/hgcn/models/base_models.py", line 91, in encode
+    h = self.encoder.encode(x, adj)
+  File "/workspace/xiongbo/hgcn/hgcn/models/encoders.py", line 151, in encode
+    return super(HGCN, self).encode(x_hyp, adj)
+  File "/workspace/xiongbo/hgcn/hgcn/models/encoders.py", line 27, in encode
+    output, _ = self.layers.forward(input)
+  File "/workspace/anaconda3/envs/geo/lib/python3.7/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/workspace/anaconda3/envs/geo/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/workspace/xiongbo/hgcn/hgcn/layers/hyp_layers.py", line 76, in forward
+    h = self.linear.forward(x)
+  File "/workspace/xiongbo/hgcn/hgcn/layers/hyp_layers.py", line 130, in forward
+    res = self.manifold.mobius_add(res, hyp_bias, self.c)
+  File "/workspace/xiongbo/hgcn/hgcn/manifolds/pseudohyperboloid_sh.py", line 400, in mobius_add
+    v,p,n = self.ptransp0(x, u, beta)
+  File "/workspace/xiongbo/hgcn/hgcn/manifolds/pseudohyperboloid_sh.py", line 418, in ptransp0
+    return self.ptransp(origin, x, u, beta)
+  File "/workspace/xiongbo/hgcn/hgcn/manifolds/pseudohyperboloid_sh.py", line 430, in ptransp
+    U[p] = self.ptransp_n(x[p], y[p], u[p], beta, time_dim=time_dim)
+  File "/workspace/xiongbo/hgcn/hgcn/manifolds/pseudohyperboloid_sh.py", line 463, in ptransp_n
+    assert not torch.isnan(U[space_like,:] ).any()
+AssertionError

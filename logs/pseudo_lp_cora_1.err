@@ -1,0 +1,42 @@
+INFO:root:Using: cuda:0
+INFO:root:Using seed 1234.
+INFO:root:LPModel(
+  (encoder): HGCN(
+    (layers): Sequential(
+      (0): HyperbolicGraphConvolution(
+        (linear): HypLinear(in_features=1434, out_features=16, c=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>))
+        (agg): HypAgg(
+          c=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>)
+          (att): DenseAtt(
+            (linear): Linear(in_features=32, out_features=1, bias=True)
+          )
+        )
+        (hyp_act): HypAct(c_in=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>), c_out=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>))
+      )
+      (1): HyperbolicGraphConvolution(
+        (linear): HypLinear(in_features=16, out_features=16, c=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>))
+        (agg): HypAgg(
+          c=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>)
+          (att): DenseAtt(
+            (linear): Linear(in_features=32, out_features=1, bias=True)
+          )
+        )
+        (hyp_act): HypAct(c_in=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>), c_out=tensor([-1.], device='cuda:0', grad_fn=<CopyBackwards>))
+      )
+    )
+  )
+  (dc): FermiDiracDecoder()
+)
+INFO:root:Total number of parameters: 23298
+/workspace/anaconda3/envs/geo/lib/python3.7/site-packages/torch/nn/functional.py:1709: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+Traceback (most recent call last):
+  File "train.py", line 155, in <module>
+    train(args)
+  File "train.py", line 101, in train
+    train_metrics['loss'].backward()
+  File "/workspace/anaconda3/envs/geo/lib/python3.7/site-packages/torch/tensor.py", line 245, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/workspace/anaconda3/envs/geo/lib/python3.7/site-packages/torch/autograd/__init__.py", line 147, in backward
+    allow_unreachable=True, accumulate_grad=True)  # allow_unreachable flag
+RuntimeError: Resource temporarily unavailable

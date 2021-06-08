@@ -1,0 +1,24 @@
+INFO:root:Using: cuda:1
+INFO:root:Using seed 1234.
+INFO:root:MDModel(
+  (encoder): HNN(
+    (layers): Sequential(
+      (0): HNNLayer(
+        (linear): HypLinear(in_features=1026, out_features=10, c=tensor([1.], device='cuda:1', grad_fn=<CopyBackwards>))
+        (hyp_act): HypAct(c_in=tensor([1.], device='cuda:1', grad_fn=<CopyBackwards>), c_out=tensor([1.], device='cuda:1', grad_fn=<CopyBackwards>))
+      )
+    )
+  )
+  (decoder): MDDecoder()
+)
+INFO:root:Total number of parameters: 10270
+Traceback (most recent call last):
+  File "train.py", line 155, in <module>
+    train(args)
+  File "train.py", line 99, in train
+    embeddings = model.encode(data['features'], data['adj_train_norm'])
+  File "/workspace/xiongbo/hgcn/hgcn/models/base_models.py", line 91, in encode
+    h = self.encoder.encode(x, adj)
+  File "/workspace/xiongbo/hgcn/hgcn/models/encoders.py", line 95, in encode
+    if self.manifold.time_dim==1:
+AttributeError: 'Hyperboloid' object has no attribute 'time_dim'

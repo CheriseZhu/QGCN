@@ -1,0 +1,107 @@
+INFO:root:Using: cuda:0
+INFO:root:Using seed 1234.
+INFO:root:MDModel(
+  (encoder): MLP(
+    (layers): Sequential(
+      (0): Linear(
+        (linear): Linear(in_features=4158, out_features=10, bias=True)
+      )
+    )
+  )
+  (decoder): MDDecoder()
+)
+INFO:root:Total number of parameters: 41590
+/home/xiongbo/anaconda3/envs/geometry/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:370: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  "please use `get_last_lr()`.", UserWarning)
+INFO:root:Epoch: 0005 lr: 0.01 train_loss: 223424.6250 train_mapscore: 0.0589 time: 2.9446s
+INFO:root:Epoch: 0010 lr: 0.01 train_loss: 222300.6094 train_mapscore: 0.1547 time: 2.6742s
+INFO:root:Epoch: 0015 lr: 0.01 train_loss: 219597.6406 train_mapscore: 0.2165 time: 2.4967s
+INFO:root:Epoch: 0020 lr: 0.01 train_loss: 215056.5312 train_mapscore: 0.2420 time: 2.5202s
+INFO:root:Epoch: 0025 lr: 0.01 train_loss: 208508.4062 train_mapscore: 0.2599 time: 2.2956s
+INFO:root:Epoch: 0030 lr: 0.01 train_loss: 200017.1562 train_mapscore: 0.2742 time: 2.2774s
+INFO:root:Epoch: 0035 lr: 0.01 train_loss: 190033.0000 train_mapscore: 0.2867 time: 2.3128s
+INFO:root:Epoch: 0040 lr: 0.01 train_loss: 179237.2500 train_mapscore: 0.3029 time: 2.2912s
+INFO:root:Epoch: 0045 lr: 0.01 train_loss: 168377.1406 train_mapscore: 0.3212 time: 2.2190s
+INFO:root:Epoch: 0050 lr: 0.01 train_loss: 158071.6094 train_mapscore: 0.3392 time: 2.0116s
+INFO:root:Epoch: 0055 lr: 0.01 train_loss: 148670.5000 train_mapscore: 0.3623 time: 2.2302s
+INFO:root:Epoch: 0060 lr: 0.01 train_loss: 140274.5469 train_mapscore: 0.3897 time: 1.9619s
+INFO:root:Epoch: 0065 lr: 0.01 train_loss: 132817.0469 train_mapscore: 0.4172 time: 2.0148s
+INFO:root:Epoch: 0070 lr: 0.01 train_loss: 126130.9531 train_mapscore: 0.4502 time: 1.8536s
+INFO:root:Epoch: 0075 lr: 0.01 train_loss: 119994.3906 train_mapscore: 0.4813 time: 1.8011s
+INFO:root:Epoch: 0080 lr: 0.01 train_loss: 114150.6719 train_mapscore: 0.5124 time: 1.7643s
+INFO:root:Epoch: 0085 lr: 0.01 train_loss: 108344.8672 train_mapscore: 0.5462 time: 1.7576s
+INFO:root:Epoch: 0090 lr: 0.01 train_loss: 102372.3672 train_mapscore: 0.5774 time: 1.7031s
+INFO:root:Epoch: 0095 lr: 0.01 train_loss: 96097.7500 train_mapscore: 0.6094 time: 1.7107s
+INFO:root:Epoch: 0100 lr: 0.01 train_loss: 89597.0625 train_mapscore: 0.6409 time: 1.7943s
+INFO:root:Epoch: 0105 lr: 0.01 train_loss: 83135.6250 train_mapscore: 0.6701 time: 1.7553s
+INFO:root:Epoch: 0110 lr: 0.01 train_loss: 77291.9375 train_mapscore: 0.6985 time: 1.7303s
+INFO:root:Epoch: 0115 lr: 0.01 train_loss: 72431.4062 train_mapscore: 0.7238 time: 1.6816s
+INFO:root:Epoch: 0120 lr: 0.01 train_loss: 68774.2031 train_mapscore: 0.7461 time: 1.6127s
+INFO:root:Epoch: 0125 lr: 0.01 train_loss: 66015.0312 train_mapscore: 0.7627 time: 1.6706s
+INFO:root:Epoch: 0130 lr: 0.01 train_loss: 63800.8398 train_mapscore: 0.7777 time: 1.6921s
+INFO:root:Epoch: 0135 lr: 0.01 train_loss: 61942.4336 train_mapscore: 0.7932 time: 1.7551s
+INFO:root:Epoch: 0140 lr: 0.01 train_loss: 60320.4297 train_mapscore: 0.8056 time: 1.6498s
+INFO:root:Epoch: 0145 lr: 0.01 train_loss: 58866.4961 train_mapscore: 0.8171 time: 1.6139s
+INFO:root:Epoch: 0150 lr: 0.01 train_loss: 57584.9023 train_mapscore: 0.8272 time: 1.7229s
+INFO:root:Epoch: 0155 lr: 0.01 train_loss: 56507.3359 train_mapscore: 0.8362 time: 1.6915s
+INFO:root:Epoch: 0160 lr: 0.01 train_loss: 55628.2578 train_mapscore: 0.8426 time: 1.6028s
+INFO:root:Epoch: 0165 lr: 0.01 train_loss: 54895.9609 train_mapscore: 0.8481 time: 1.6505s
+INFO:root:Epoch: 0170 lr: 0.01 train_loss: 54261.6289 train_mapscore: 0.8536 time: 1.7869s
+INFO:root:Epoch: 0175 lr: 0.01 train_loss: 53696.4570 train_mapscore: 0.8583 time: 1.7100s
+INFO:root:Epoch: 0180 lr: 0.01 train_loss: 53183.9375 train_mapscore: 0.8614 time: 1.7468s
+INFO:root:Epoch: 0185 lr: 0.01 train_loss: 52714.1367 train_mapscore: 0.8649 time: 1.6498s
+INFO:root:Epoch: 0190 lr: 0.01 train_loss: 52281.6562 train_mapscore: 0.8681 time: 1.6512s
+INFO:root:Epoch: 0195 lr: 0.01 train_loss: 51882.6641 train_mapscore: 0.8701 time: 1.7572s
+INFO:root:Epoch: 0200 lr: 0.01 train_loss: 51512.4531 train_mapscore: 0.8729 time: 1.7577s
+INFO:root:Epoch: 0205 lr: 0.01 train_loss: 51166.4961 train_mapscore: 0.8755 time: 1.7578s
+INFO:root:Epoch: 0210 lr: 0.01 train_loss: 50843.1875 train_mapscore: 0.8773 time: 1.6562s
+INFO:root:Epoch: 0215 lr: 0.01 train_loss: 50539.9102 train_mapscore: 0.8794 time: 1.7568s
+INFO:root:Epoch: 0220 lr: 0.01 train_loss: 50255.3789 train_mapscore: 0.8814 time: 1.6764s
+INFO:root:Epoch: 0225 lr: 0.01 train_loss: 49988.3359 train_mapscore: 0.8833 time: 1.7576s
+INFO:root:Epoch: 0230 lr: 0.01 train_loss: 49737.0078 train_mapscore: 0.8846 time: 1.8105s
+INFO:root:Epoch: 0235 lr: 0.01 train_loss: 49499.5625 train_mapscore: 0.8855 time: 1.6697s
+INFO:root:Epoch: 0240 lr: 0.01 train_loss: 49274.8125 train_mapscore: 0.8863 time: 1.7490s
+INFO:root:Epoch: 0245 lr: 0.01 train_loss: 49061.8125 train_mapscore: 0.8882 time: 1.7403s
+INFO:root:Epoch: 0250 lr: 0.01 train_loss: 48859.3750 train_mapscore: 0.8895 time: 1.8366s
+INFO:root:Epoch: 0255 lr: 0.01 train_loss: 48666.6250 train_mapscore: 0.8906 time: 1.8047s
+INFO:root:Epoch: 0260 lr: 0.01 train_loss: 48482.6328 train_mapscore: 0.8921 time: 1.7119s
+INFO:root:Epoch: 0265 lr: 0.01 train_loss: 48306.8359 train_mapscore: 0.8933 time: 1.7417s
+INFO:root:Epoch: 0270 lr: 0.01 train_loss: 48138.5938 train_mapscore: 0.8943 time: 1.6951s
+INFO:root:Epoch: 0275 lr: 0.01 train_loss: 47977.3086 train_mapscore: 0.8961 time: 1.7266s
+INFO:root:Epoch: 0280 lr: 0.01 train_loss: 47822.4883 train_mapscore: 0.8969 time: 1.7493s
+INFO:root:Epoch: 0285 lr: 0.01 train_loss: 47673.4688 train_mapscore: 0.8981 time: 1.6748s
+INFO:root:Epoch: 0290 lr: 0.01 train_loss: 47529.9375 train_mapscore: 0.8990 time: 1.7646s
+INFO:root:Epoch: 0295 lr: 0.01 train_loss: 47391.5820 train_mapscore: 0.9001 time: 1.6745s
+INFO:root:Epoch: 0300 lr: 0.01 train_loss: 47257.9727 train_mapscore: 0.9011 time: 1.7013s
+INFO:root:Epoch: 0305 lr: 0.01 train_loss: 47128.7969 train_mapscore: 0.9024 time: 1.7954s
+INFO:root:Epoch: 0310 lr: 0.01 train_loss: 47003.6953 train_mapscore: 0.9024 time: 1.6538s
+INFO:root:Epoch: 0315 lr: 0.01 train_loss: 46882.4180 train_mapscore: 0.9034 time: 1.7693s
+INFO:root:Epoch: 0320 lr: 0.01 train_loss: 46764.5469 train_mapscore: 0.9054 time: 1.7790s
+INFO:root:Epoch: 0325 lr: 0.01 train_loss: 46650.0078 train_mapscore: 0.9059 time: 1.7625s
+INFO:root:Epoch: 0330 lr: 0.01 train_loss: 46538.5195 train_mapscore: 0.9067 time: 1.7420s
+INFO:root:Epoch: 0335 lr: 0.01 train_loss: 46429.7695 train_mapscore: 0.9072 time: 1.7335s
+INFO:root:Epoch: 0340 lr: 0.01 train_loss: 46323.4922 train_mapscore: 0.9080 time: 1.7840s
+INFO:root:Epoch: 0345 lr: 0.01 train_loss: 46219.7578 train_mapscore: 0.9078 time: 1.7155s
+INFO:root:Epoch: 0350 lr: 0.01 train_loss: 46118.0977 train_mapscore: 0.9077 time: 1.7980s
+[W python_anomaly_mode.cpp:104] Warning: Error detected in MulBackward0. Traceback of forward call that caused the error:
+  File "train.py", line 155, in <module>
+    train(args)
+  File "train.py", line 100, in train
+    train_metrics = model.compute_metrics(embeddings, data, 'train')
+  File "/home/xiongbo/hgcn/hgcn/models/base_models.py", line 77, in compute_metrics
+    x, emb_dist, loss = self.decode(embeddings,data,None)
+  File "/home/xiongbo/hgcn/hgcn/models/base_models.py", line 72, in decode
+    output = self.decoder.decode(h, adj)
+  File "/home/xiongbo/hgcn/hgcn/models/decoders.py", line 111, in decode
+    negative_sim = simi * (negative.long())
+ (function _print_stack)
+Traceback (most recent call last):
+  File "train.py", line 155, in <module>
+    train(args)
+  File "train.py", line 101, in train
+    train_metrics['loss'].backward()
+  File "/home/xiongbo/anaconda3/envs/geometry/lib/python3.7/site-packages/torch/tensor.py", line 245, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/xiongbo/anaconda3/envs/geometry/lib/python3.7/site-packages/torch/autograd/__init__.py", line 147, in backward
+    allow_unreachable=True, accumulate_grad=True)  # allow_unreachable flag
+RuntimeError: Function 'MulBackward0' returned nan values in its 0th output.
