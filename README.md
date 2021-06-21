@@ -11,7 +11,9 @@ pip install -r requirements.txt
 ```
 ## Training, evaluation and results
 
-```python train.py --task md --dataset web-edu --model HGCN --lr 0.01 --dim 10 --num-layers 2 --act relu --bias 1 --dropout 0 --weight-decay 0 --manifold PseudoHyperboloid --log-freq 5 --space_dim 9 --time_dim 1 --cuda 1```
+* For example, to run graph reconstruction on web-edu for semi-Riemannian space with time_dim=3 (mAP: 99.67)
+
+```python train.py --task md --dataset web-edu --model HGCN --lr 0.01 --dim 10 --num-layers 2 --act relu --bias 1 --dropout 0 --weight-decay 0 --manifold PseudoHyperboloid --log-freq 5 --space_dim 7 --time_dim 3 --cuda 1```
 
 ```
 optional arguments:
