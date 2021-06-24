@@ -88,6 +88,10 @@ optional arguments:
                         seed for data splits (train/test/val)
 ```
 
+* We also provide a script to run all the experiment results. 
+
+```python run_graph_reconstruction.py```
+
 
 
 ## Citation
