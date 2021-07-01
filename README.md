@@ -12,7 +12,8 @@ pip install -r requirements.txt
 
 Folder
 
-```The data/ folder contains all the required datasets.
+```
+The data/ folder contains all the required datasets.
 The layers/ folder contains basic operations of euclidean layers, hyperbolic and pseudo-hyperbolic layers.
 The manifolds/ folder contains basic operations of all manifolds.
 The models/ folder contains the implementation of baselines, which consist of encoder and decoder.
