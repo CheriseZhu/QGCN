@@ -13,11 +13,11 @@ pip install -r requirements.txt
 Folder
 
 '''
-The data/ folder contains all the required datasets
-The layers/ folder contains basic operations of euclidean layers, hyperbolic and pseudo-hyperbolic layers.
-The manifolds/ folder contains basic operations of all manifolds.
-The models/ folder contains the implementation of baselines, which consist of encoder and decoder.
-The utils/ folder contains the basic utils for data/eval/train, besides, hyperbolicity is used for calculating the distribution of hyperbolicity.
+The data/ folder contains all the required datasets <br>
+The layers/ folder contains basic operations of euclidean layers, hyperbolic and pseudo-hyperbolic layers.<br>
+The manifolds/ folder contains basic operations of all manifolds.<br>
+The models/ folder contains the implementation of baselines, which consist of encoder and decoder.<br>
+The utils/ folder contains the basic utils for data/eval/train, besides, hyperbolicity is used for calculating the distribution of hyperbolicity.<br>
 '''
 
 ## Training, evaluation and results
