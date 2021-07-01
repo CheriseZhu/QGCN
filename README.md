@@ -102,6 +102,7 @@ optional arguments:
 
 ```python run_graph_reconstruction.py```
 
+* The results can be find in the /log directory once finished running. 
 
 
 ## Citation
