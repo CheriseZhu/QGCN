@@ -9,6 +9,17 @@ To install requirements:
 ```setup
 pip install -r requirements.txt
 ```
+
+Folder
+
+'''
+The data/ folder contains all the required datasets
+The layers/ folder contains basic operations of euclidean layers, hyperbolic and pseudo-hyperbolic layers.
+The manifolds/ folder contains basic operations of all manifolds.
+The models/ folder contains the implementation of baselines, which consist of encoder and decoder.
+The utils/ folder contains the basic utils for data/eval/train, besides, hyperbolicity is used for calculating the distribution of hyperbolicity.
+'''
+
 ## Training, evaluation and results
 
 * For example, to run graph reconstruction on web-edu for semi-Riemannian space with time_dim=3 (mAP: 99.67)
@@ -110,8 +121,6 @@ If you find this code useful, please cite the following paper:
  * [hgcn](https://github.com/HazyResearch/hgcn)
  * [ultrahyperbolic embeddings](https://github.com/MarcTLaw/UltrahyperbolicRepresentation)
  * [geoopt](https://github.com/geoopt/geoopt)
-
-## References
 
 
 ## Contributing
